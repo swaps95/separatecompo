@@ -1,0 +1,27 @@
+
+
+<div class="row">
+	<div class="col-3">
+	<ul>
+		<li><a (click)="firstclick($event)">Link</a></li>
+		<li><a (click)="capturecount($event)">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+	</ul>
+ </div>
+ <div class="col-9">
+
+ <ul class="userbase" *ngIf="collection; else logout"> 
+  <li *ngFor="let person of collection | paginate: { itemsPerPage: 1, currentPage: p ,totalItems: 3 }" class="userc"> 
+    <img [src]="person.avatar" class="img-users">
+     {{ person.first_name }}{{person.last_name}}
+  </li>
+</ul>
+ <pagination-controls (pageChange)="p = $event"></pagination-controls>
+	 <ng-template #logout>Logut</ng-template>
+ 	
+ </div>
+</div>
+<!--	 {{capturecount()}}-->
+<router-outlet></router-outlet>

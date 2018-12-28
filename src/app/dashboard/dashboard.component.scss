@@ -1,0 +1,30 @@
+.col-3{
+	width: 20%;
+	height: 91vh;
+	background-color: #2d0b55;
+	display: inline-block;
+	 li{
+		 padding: 15px 0;
+		 list-style: none;
+		 padding-left: 25%;
+		   a{
+			   color: white;
+				 text-transform: uppercase;
+				 &:hover{
+					 color: #8E2BFF;
+					 cursor: pointer;
+				 }
+		   }
+	 }
+}
+.col-9{
+	width: 80%;
+	display: inline-block;
+	vertical-align: top;
+	   ul{
+	    list-style: none;
+     }
+	  .userc{
+		  
+	   }
+}

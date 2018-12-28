@@ -1,0 +1,32 @@
+.forms{
+	  max-width: 1500px;
+    width: 40%;
+    margin: 0 auto;
+	  padding: 50px;
+	    input[type]{
+			  width: 100%;
+				padding: 10px 0;
+				font-weight: bold;
+				text-transform: uppercase;
+	     }
+	    label{
+				display: block;
+		    padding-bottom: 30px;
+				text-transform: uppercase;
+				font-weight: bold;
+	    }
+	    button{
+		    width: 100%;
+				padding: 10px 0;
+				background-color: green;
+				color: white;
+			  font-weight: bold;
+				border: none;
+				text-transform: uppercase;
+	   }
+	   .invalid-feedback{
+		    color: red;
+			 font-size: 14px;
+			 text-align: center;
+	   }
+}
